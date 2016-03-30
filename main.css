@@ -11,5 +11,15 @@
 				font-family: Helvetica, san-serif;
 				text-align: center;
 				font-size:24px;
+				margin:0px;
 			}
 			div { padding: 128px 0 0 0; }
+			#swipebox{
+	height:10px;
+	position:absolute;
+	top: 0px;
+	width:100%;
+	opacity: 0;
+	padding:0px;
+}
+
