@@ -5,7 +5,7 @@
         versionCode = "10" 
         version     = "1.0.0" >
         
-    <name>Fibonacci</name>
+    <name>Swipe Tester</name>
     
     <description>
       Testing app swipes.
