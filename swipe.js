@@ -113,7 +113,7 @@
 			swipeDirection = 'up';
 		}
 	}
-	var colorChange = ['blue', 'red', 'green', 'orange', 'maroon', 'purple'];
+	
 	
 	function processingRoutine() {
 		var swipedElement = document.getElementById(triggerElementID);
@@ -128,12 +128,24 @@
 			document.getElementById('swipeBox1').style.backgroundColor = 'maroon';
 		} else if ( swipeDirection == 'down' ) {
 			// REPLACE WITH YOUR ROUTINES
-			var i = Math.ceil(Math.random()*colorChange.length);
-			document.getElementById('swipeBox1').style.backgroundColor = colorChange[i];
+			colorchanger();
 		}
 	}
 
-
+var colorChange = 0;
 function blue(){
 	document.getElementById('container').style.background='blue'
 }
+
+            function colorchanger(){
+            	if(colorChange == 0){
+				document.getElementById('swipeBox1').style.backgroundColor = 'blue';
+				}
+				if(colorChange == 1){
+					document.getElementById('swipeBox1').style.backgroundColor = 'red';
+				}
+				colorChange++;
+				if(colorChange == 2){
+					colorChange = 0;
+				}
+			}
