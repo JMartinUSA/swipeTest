@@ -1,9 +1,14 @@
-
+#swipebox{
+	height:10px;
+	position:absolute;
+	top: 0px;
+	width:100%;
+	opacity: 0;
+}
 
 			body
 			{
 				font-family: Helvetica, san-serif;
-				margin:0px;
 				text-align: center;
 				font-size:24px;
 			}

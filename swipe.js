@@ -113,21 +113,23 @@
 			swipeDirection = 'up';
 		}
 	}
+	var colorChange = ['blue', 'red', 'green', 'orange', 'maroon', 'purple'];
 	
 	function processingRoutine() {
 		var swipedElement = document.getElementById(triggerElementID);
 		if ( swipeDirection == 'left' ) {
 			// REPLACE WITH YOUR ROUTINES
-			swipedElement.style.backgroundColor = 'orange';
+			document.getElementById('swipeBox1').style.backgroundColor = 'orange';
 		} else if ( swipeDirection == 'right' ) {
 			// REPLACE WITH YOUR ROUTINES
-			swipedElement.style.backgroundColor = 'green';
+			document.getElementById('swipeBox1').style.backgroundColor = 'green';
 		} else if ( swipeDirection == 'up' ) {
 			// REPLACE WITH YOUR ROUTINES
-			swipedElement.style.backgroundColor = 'maroon';
+			document.getElementById('swipeBox1').style.backgroundColor = 'maroon';
 		} else if ( swipeDirection == 'down' ) {
 			// REPLACE WITH YOUR ROUTINES
-			swipedElement.style.backgroundColor = 'purple';
+			var i = Math.ceil(Math.random()*colorChange.length);
+			document.getElementById('swipeBox1').style.backgroundColor = colorChange[i];
 		}
 	}
 
